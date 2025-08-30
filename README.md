@@ -70,6 +70,9 @@ plt.savefig('images/correlation\_heatmap.png', bbox\_inches='tight')
 plt.show()
 
 **Image:**
+![Correlation Heatmap](images/correlation_heatmap.png)
+
+![Pair Plot](images/pair_plot.png)
 
 **Interpretation:**
 
@@ -88,7 +91,8 @@ plt.savefig('images/gdp\_distribution\_plot.png', bbox\_inches='tight')
 plt.show()
 
 **Image:**
-
+![Before Outlier Treatment](images/outlier_analysis_subplots.png)
+![After Outlier Treatment](images/after_outlier_treatment_subplots.png)
 **Interpretation:** The boxplot shows several outliers on the higher end of the GDP spectrum. These represent very wealthy countries. Since K-Means is sensitive to outliers, feature scaling is essential to mitigate their influence.
 
 ## **5\. Data Preprocessing**
@@ -112,8 +116,9 @@ plt.savefig('images/elbow\_plot.png', bbox\_inches='tight')
 visualizer.show()
 
 **Image:**
+![K- Elbow Plot](images/kelbow.png)
 
-**Interpretation:** The elbow is clearly visible at **K=3**, indicating that three clusters is the optimal number.
+**Interpretation:** The elbow is clearly visible at **K=5**, indicating that three clusters is the optimal number.
 
 **B. The Silhouette Score:** This score measures how similar an object is to its own cluster compared to other clusters. A higher score is better.
 
@@ -124,7 +129,9 @@ visualizer.show()
 
 **Image:**
 
-**Interpretation:** The silhouette score for K=3 is strong and consistent across all three clusters, further validating our choice.
+![Silhouette Plot](images/silhouette_plot.png)
+
+**Interpretation:** The silhouette score for K=5 is strong and consistent across all three clusters, hence the final final choice.
 
 ### **6.2. Training the Final Model**
 
@@ -176,6 +183,7 @@ fig.write\_image("images/map\_after\_clustering.png")
 fig.show()
 
 **Image:**
+![Countries After Clustering](images/map_after_clustering.png)
 
 ## **8\. Final Recommendation**
 
